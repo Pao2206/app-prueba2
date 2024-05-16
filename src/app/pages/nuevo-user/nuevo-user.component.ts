@@ -13,11 +13,12 @@ export class NuevoUserComponent {
 
   id: any;
   email: any;
+  password: any;
   tipo: any;
 
   servicio = inject(UsersService)
 
-  guardar( datos: any){
+  guardar(datos: any){
     this.servicio.postUser(datos.value).subscribe()
 
     //recarga la página

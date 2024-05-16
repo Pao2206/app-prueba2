@@ -13,6 +13,7 @@ export class EditarUserComponent {
 
   id: any;
   email: any;
+  password: any;
   tipo: any;
 
   servicio = inject(UsersService)

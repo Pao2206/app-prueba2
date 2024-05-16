@@ -1,15 +1,21 @@
 {
   "users": [
     {
-      "email": "admin1@yop.com",
-      "password": "$2a$10$Y/hAnsg00JLjuUwF9Cw1t.rHCM681i8wRrtzEfxQ3u5njDzk3wl7.",
       "id": 2,
+      "email": "admin1.1@yop.com",
+      "password": "$2a$10$OHJU/eT7jc7onoOA5yZTKuq9QdcF/ihQu6gQjHrsE/xYz5olTLj1O",
       "tipo": "admin"
     },
     {
       "email": "mesero1@yop.com",
       "password": "$2a$10$onpS7bqBi8VO3.KCbrRMNOlkBQ8Li5GDbF3V6E0Fy9f5KE7rZDyee",
       "id": 3,
+      "tipo": "mesero"
+    },
+    {
+      "email": "mesero2@yop.com",
+      "password": "$2a$10$vE2TsyECQLtkr0m7/eSF6ehsT0UlJQeqIKO6BQiqA/vzPnIqElYKe",
+      "id": 5,
       "tipo": "mesero"
     }
   ],
