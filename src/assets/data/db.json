@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "email": "admin1@yop.com",
+      "password": "$2a$10$Y/hAnsg00JLjuUwF9Cw1t.rHCM681i8wRrtzEfxQ3u5njDzk3wl7.",
+      "id": 2,
+      "tipo": "admin"
+    },
+    {
+      "email": "mesero1@yop.com",
+      "password": "$2a$10$onpS7bqBi8VO3.KCbrRMNOlkBQ8Li5GDbF3V6E0Fy9f5KE7rZDyee",
+      "id": 3,
+      "tipo": "mesero"
+    }
+  ],
+  "ordenes": [
+    {
+      "id": 1,
+      "mesa": 1,
+      "producto": "hamburguesa",
+      "total": 30
+    },
+    {
+      "id": 2,
+      "mesa": 2,
+      "producto": "pizza",
+      "total": 20
+    },
+    {
+      "id": 3,
+      "mesa": 3,
+      "producto": "shawarma",
+      "total": 10
+    },
+    {
+      "id": 4,
+      "mesa": 4,
+      "producto": "salchipapa",
+      "total": 6
+    },
+    {
+      "id": 5,
+      "mesa": 5,
+      "producto": "bebidas",
+      "total": 5
+    },
+    {
+      "id": 6,
+      "mesa": 6,
+      "producto": "2 hamburguesa",
+      "total": 25
+    },
+    {
+      "id": 7,
+      "mesa": 10,
+      "producto": "helados",
+      "total": 5
+    }
+  ]
+}

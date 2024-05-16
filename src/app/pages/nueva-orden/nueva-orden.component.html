@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Nueva Orden</h1>
+    <h5>Ingrese toda la informacion por favor</h5>
+<form (ngSubmit)="guardar(formulario)" #formulario = "ngForm">
+    <div class="mb-3 mt-3">
+      <label for="email" class="form-label">ID:</label>
+      <input type="number" class="form-control" id="email" placeholder="Ingrese el ID" name="id" [(ngModel)]="id">
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Mesa:</label>
+      <input type="number" class="form-control" id="pwd" placeholder="Ingrese el # de mesa" name="mesa" [(ngModel)]="mesa">
+    </div>
+    <div class="mb-3">
+        <label for="pwd" class="form-label">Producto:</label>
+        <input type="text" class="form-control" id="pwd" placeholder="Ingrese los productos consumidos" name="producto" [(ngModel)]="producto">
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Total:</label>
+        <input type="number" class="form-control" id="pwd" placeholder="Ingrese el total" name="total" [(ngModel)]="total">
+      </div>
+    <button type="submit" class="btn btn-success">Generar</button>
+    <a href="ordenes" class="btn btn-warning">Regresar</a>
+  </form>
+</div>

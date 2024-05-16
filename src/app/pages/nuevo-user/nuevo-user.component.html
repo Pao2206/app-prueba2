@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Crear Nuevo Usuario</h1>
+    <hr>
+<form (ngSubmit)="guardar(formulario)" #formulario = "ngForm">
+    <div class="mb-3 mt-3">
+      <label for="email" class="form-label">ID:</label>
+      <input type="number" class="form-control" id="email" placeholder="Ingrese el ID" name="id" [(ngModel)]="id">
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Correo:</label>
+      <input type="email" class="form-control" id="pwd" placeholder="Ingrese el correo" name="email" [(ngModel)]="email">
+    </div>
+    <div>
+      <label for="">Seleccione Tipo</label> <br>
+      <select name="tipo" [(ngModel)]="tipo">
+      <option value="mesero">mesero</option>
+      <option value="admin">admin</option>
+      </select>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-success">Guardar</button>
+    <a href="gestionUsers" class="btn btn-warning">Regresar</a>
+  </form>
+</div>

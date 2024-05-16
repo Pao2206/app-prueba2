@@ -1,0 +1,42 @@
+<div class="container">
+<h1>Lista de ordenes</h1>
+<div>
+  <label for="filtro">Filtro por Mesa:</label>
+  <input type="text" class="form-control" placeholder="Filtro por mesa" aria-label="filtro" style="margin: 5px" [(ngModel)]="filtro">
+</div>
+<hr>
+<div>
+  <button class="btn btn-warning" [routerLink]="['/nueva-orden', orden.id]" style="margin-left: 550px;">Nueva Orden</button>
+</div>
+<hr>
+
+<div class="container">
+    <div class="col-md-12">
+      <div class="row">
+        <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Mesa</th>
+            <th>Producto</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+          @for(item of orden; track item){
+            @if (filtro == item.mesa || filtro == 100 || filtro == 0 || filtro == null) {
+            <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.mesa}}</td>
+            <td>{{item.producto}}</td>
+            <td>${{item.total}}</td>
+        </tr>
+        }
+      }
+          </tbody>
+      </table>
+    
+        </div>
+    </div>
+</div>
+</div>
