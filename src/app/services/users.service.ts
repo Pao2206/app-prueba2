@@ -17,7 +17,7 @@ export class UsersService {
   }
    
   ////CREAR - POST////
-  postUser(user: JSON): Observable <any>{
+  postUser(user: any): Observable <any>{
     return this.http.post(this.API_USER, user)
   }
 

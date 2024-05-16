@@ -18,7 +18,6 @@ export class NuevoUserComponent {
   servicio = inject(UsersService)
 
   guardar( datos: any){
-    console.log(datos.value);
     this.servicio.postUser(datos.value).subscribe()
 
     //recarga la página
